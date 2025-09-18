@@ -1,0 +1,37 @@
+{
+  "name": "ats-scorer",
+  "version": "1.0.0",
+  "description": "ATS Resume Scorer Full Stack Project with file upload support (no external API)",
+  "main": "backend/server.js",
+  "scripts": {
+    "start:backend": "nodemon backend/server.js",
+    "start:frontend": "cd frontend/ATSui && npm run dev",
+    "start:all": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "body-parser": "^1.20.3",
+    "chart.js": "^4.5.0",
+    "concurrently": "^8.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "form-data": "^4.0.4",
+    "fs": "^0.0.1-security",
+    "mammoth": "^1.4.21",
+    "multer": "^1.4.5-lts.1",
+    "pdf-parse": "^1.1.1",
+    "react-chartjs-2": "^5.3.0"
+  },
+  "keywords": [
+    "ATS",
+    "Resume Scorer",
+    "React",
+    "Node.js",
+    "Full Stack"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

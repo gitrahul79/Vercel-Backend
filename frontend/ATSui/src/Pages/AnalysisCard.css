@@ -1,0 +1,157 @@
+.analysis-card {
+ 
+  padding: 20px;
+  background-color : linear-gradient(135deg, #2e2e2e, #4f4f4f);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.analysis-card h3 {
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.analysis-card p {
+  color: white;
+  margin: 12px 0;
+  font-size: 16px;
+}
+
+.analysis-card h4 {
+  color: whitesmoke;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 5px;
+}
+
+.analysis-card ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 8px 0;
+}
+
+.analysis-card li {
+  position: relative;
+  padding: 10px 0;
+  font-size: 15px;
+  color: whitesmoke;
+  line-height: 1.5;
+}
+
+/* Gradient Line Styles */
+.gradient-line {
+  height: 4px;
+  width: 100%;
+  margin-top: 8px;
+  border-radius: 2px;
+  margin-left: 0;
+}
+
+.gradient-line.strength {
+  background: linear-gradient(90deg, #4caf50, #8bc34a);
+  box-shadow: 0 1px 3px rgba(76, 175, 80, 0.3);
+}
+
+.gradient-line.weakness {
+  background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+  box-shadow: 0 1px 3px rgba(255, 107, 107, 0.3);
+}
+
+.gradient-line.preview {
+  background: linear-gradient(90deg, #9c88ff, #6a5acd);
+  box-shadow: 0 1px 3px rgba(156, 136, 255, 0.3);
+}
+
+.placeholder {
+  text-align: center;
+  color: whitesmoke;
+  font-style: italic;
+  padding: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .analysis-card {
+    padding: 1.5rem;
+  }
+
+  .analysis-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .analysis-card h4 {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    margin-bottom: 8px;
+  }
+
+  .analysis-card p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .analysis-card li {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .gradient-line {
+    height: 3px;
+  }
+
+  .placeholder {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .analysis-card {
+    padding: 15px;
+  }
+
+  .analysis-card h3,
+  .analysis-card h4 {
+    font-size: 1.2rem;
+  }
+
+  .gradient-line {
+    height: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .analysis-card {
+    padding: 1rem;
+  }
+
+  .analysis-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .analysis-card h4 {
+    font-size: 1rem;
+    margin-top: 12px;
+    margin-bottom: 6px;
+  }
+
+  .analysis-card p {
+    font-size: 13px;
+    margin: 8px 0;
+  }
+
+  .analysis-card li {
+    font-size: 13px;
+    padding: 6px 0;
+  }
+
+  .gradient-line {
+    height: 2px;
+  }
+
+  .placeholder {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
